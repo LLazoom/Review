@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Key Takeaways</title>
+<title>Returns Disclosure & Disclaimer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -1046,32 +1046,13 @@
 </head>
 <body>
 <div class="doc" style="padding-top:0;padding-bottom:32px;">
-  <!-- ══ KEY TAKEAWAYS ══ -->
-  <div class="takeaways">
-    <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item">
-      <div class="takeaway-bullet"></div>
-      <div class="takeaway-text">Q1 2026 was the first negative quarter for global equities since early 2022. The S&amp;P 500 fell 4.4%, the Nasdaq 100 fell 5.8% and the Magnificent Seven dropped roughly 13% as the AI trade was repriced.</div>
-    </div>
-    <div class="takeaway-item">
-      <div class="takeaway-bullet"></div>
-      <div class="takeaway-text">Conflict involving Iran from late February disrupted shipping through the Strait of Hormuz. Brent crude rose around 80% over the quarter and pushed inflation expectations sharply higher.</div>
-    </div>
-    <div class="takeaway-item">
-      <div class="takeaway-bullet"></div>
-      <div class="takeaway-text">All four major central banks — the Fed, ECB, BoE and BoJ — held rates unchanged in March within a 24-hour window. Markets repriced from expecting two further Fed cuts to essentially none.</div>
-    </div>
-    <div class="takeaway-item">
-      <div class="takeaway-bullet"></div>
-      <div class="takeaway-text">Real assets were the clear winners. The Bloomberg Commodity Index returned 26.8%, gold reached a record USD 5,595/oz on 29 January, and listed infrastructure delivered around 10%.</div>
-    </div>
-    <div class="takeaway-item">
-      <div class="takeaway-bullet"></div>
-      <div class="takeaway-text">The UK's FTSE All-Share returned +2.4%, supported by its energy and resources weighting. UK CPI was 3.0% in January and the Bank of England held Bank Rate at 3.75%.</div>
-    </div>
-    <div class="takeaway-item">
-      <div class="takeaway-bullet"></div>
-      <div class="takeaway-text">All six London Tyne portfolios delivered positive returns and outperformed their IA peer-group benchmarks, with outperformance ranging from +1.10% to +2.66%.</div>
+  <!-- ══ RETURNS DISCLOSURE & DISCLAIMER ══ -->
+  <div class="disclaimer">
+    <div class="disclaimer-title">Returns Disclosure &amp; Disclaimer</div>
+    <div class="disclaimer-text">
+      <p style="margin-bottom:8px;">Figures for the LT Premium Portfolios reflect the actual returns of a representative model of the given portfolio. Prior to 13/03/2025, figures for the LT CC Portfolios refer to actual returns of their Premium counterpart, from 13/03/2025 onward, performance reflects a representative model of the given portfolio. Past performance is not a reliable indicator of future performance. Returns are net of holdings' management fees and expenses based on the cheapest share class available; however, they do not include the fees charged by the manager (estimated to be 0.35% per annum), the adviser or the Platform. Returns are calculated assuming a single trading date in relation to any changes to underlying holdings which will not necessarily be the date that actual platform transactions occurred. Therefore, platform performance may vary from actual performance. For periods longer than one-year, cumulative performance has not been annualised. Movement in exchange rates may affect the value of some underlying investments.</p>
+      <p style="margin-bottom:8px;"><strong>Disclaimer:</strong> This document is intended to be communicated solely to persons that fall within the FCA classification of Professional Client.</p>
+      <p>This document is for information and discussion purposes only and does not constitute an offer to sell or a solicitation of an offer to purchase interests in any portfolio managed by Sturgeon Ventures LLP trading as London Tyne. Nothing in this document should be construed as a recommendation, representation of suitability or endorsement of any particular security or investment. Prospective investors should seek their own legal or tax advice. The information contained in this document has been compiled from sources believed to be reliable, but which have not been independently verified. Forward looking information is provided for illustrative purposes only and is not intended to serve as and must not be relied on by any investor as, a guarantee, an assurance, a prediction or a definitive statement of fact or probability. Past performance is not a reliable indicator of future performance. All marketing materials are distributed in the United Kingdom to professional investors by London Tyne, a trading name of Sturgeon Ventures LLP utilised under license. Sturgeon Ventures LLP (FRN: 452811) is authorised and regulated by the Financial Conduct Authority (FCA).</p>
     </div>
   </div>
 </div>
