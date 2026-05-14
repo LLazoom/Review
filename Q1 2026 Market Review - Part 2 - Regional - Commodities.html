@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q1 2026 Market Review · Part 2 · Regional & Commodities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1e35;
+    --navy2: #112038;
+    --navy3: #152849;
+    --gold: #c9a84c;
+    --gold-light: #e2c87a;
+    --gold-dim: rgba(201,168,76,0.25);
+    --red: #c0282a;
+    --blue: #1e3c8c;
+    --text: #dfe8f0;
+    --text-dim: #8aa0b8;
+    --text-strong: #f0eee8;
+    --border: rgba(201,168,76,0.18);
+    --positive: #4db87a;
+    --negative: #e05a5a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--navy);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Layout ── */
+  .doc {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 80px;
+  }
+
+  /* ── Cover ── */
+  .cover {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: var(--navy);
+    border-bottom: 2px solid var(--gold);
+    padding: 60px 64px 72px;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 40%, rgba(201,168,76,0.04) 100%);
+    pointer-events: none;
+  }
+
+  .cover-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  .cover-logo-wrap {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 64px;
+    margin: -60px -64px 56px -64px;
+    position: relative;
+    z-index: 2;
+  }
+  .cover-logo-wrap img { height: 42px; display: block; }
+  .cover-logo-wrap-right {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7a8a9a;
+    font-weight: 500;
+  }
+
+  .cover-title-block { margin-top: auto; padding-top: 0; }
+
+  .cover-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+
+  .cover-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 1.0;
+    color: var(--text-strong);
+    text-wrap: balance;
+  }
+
+  .cover-title span {
+    color: var(--gold);
+  }
+
+  .cover-subtitle {
+    margin-top: 24px;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--text-dim);
+    letter-spacing: 0.5px;
+  }
+
+  .cover-rule {
+    width: 80px;
+    height: 2px;
+    background: var(--gold);
+    margin: 32px 0;
+  }
+
+  .cover-meta {
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+
+
+  /* ── Running header ── */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 64px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 64px;
+  }
+
+  .page-header-logo img { height: 28px; }
+  .page-header-logo-wrap {
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+  }
+
+  .page-header-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  /* ── Section ── */
+  .section {
+    padding: 56px 64px 0;
+  }
+
+  .section-num {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--text-strong);
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .section-rule {
+    width: 48px;
+    height: 2px;
+    background: var(--gold);
+    margin: 16px 0 28px;
+  }
+
+  /* ── Key takeaways ── */
+  .takeaways {
+    padding: 48px 64px;
+    background: var(--navy2);
+    border-left: 3px solid var(--gold);
+    margin: 48px 0 0;
+  }
+
+  .takeaways-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .takeaway-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .takeaway-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .takeaway-bullet {
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin-top: 9px;
+  }
+
+  .takeaway-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  /* ── Stat callouts ── */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    margin: 32px 0;
+    border: 1px solid var(--border);
+  }
+
+  .stat-card {
+    background: var(--navy2);
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .stat-card .val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--gold);
+  }
+  .stat-card .val.pos { color: var(--positive); }
+  .stat-card .val.neg { color: var(--negative); }
+
+  .stat-card .lbl {
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: 8px;
+  }
+
+  /* ── Body text ── */
+  .body-text {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text);
+    text-wrap: pretty;
+  }
+
+  .body-text p { margin-bottom: 1em; }
+  .body-text p:last-child { margin-bottom: 0; }
+
+  /* ── Subsection heading ── */
+  .sub-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-strong);
+    margin: 40px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── Tables ── */
+  .table-wrap {
+    margin: 28px 0;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .table-caption {
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead th {
+    background: var(--navy3);
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+
+  tbody tr {
+    border-bottom: 1px solid rgba(201,168,76,0.08);
+    transition: background 0.15s;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+  tbody tr:hover { background: rgba(201,168,76,0.06); }
+
+  td {
+    padding: 11px 16px;
+    font-size: 13.5px;
+    color: var(--text);
+    vertical-align: top;
+  }
+
+  td:first-child { font-weight: 500; color: var(--text-strong); }
+
+  .ret-pos { color: var(--positive); font-weight: 600; }
+  .ret-neg { color: var(--negative); font-weight: 600; }
+  .ret-neu { color: var(--text-dim); font-weight: 500; }
+
+  .table-source {
+    font-size: 10.5px;
+    color: var(--text-dim);
+    padding: 10px 16px;
+    background: rgba(255,255,255,0.02);
+    border-top: 1px solid var(--border);
+    font-style: italic;
+  }
+
+  /* ── Bar charts ── */
+  .chart-wrap {
+    margin: 28px 0;
+    background: var(--navy2);
+    border: 1px solid var(--border);
+    padding: 24px;
+  }
+
+  .chart-title {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 12px;
+  }
+
+  .bar-label {
+    font-size: 11.5px;
+    color: var(--text-dim);
+    width: 200px;
+    flex-shrink: 0;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 2px;
+    overflow: visible;
+    position: relative;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+  }
+  .bar-fill.pos { background: linear-gradient(90deg, var(--positive), #68d494); }
+  .bar-fill.neg { background: linear-gradient(90deg, var(--negative), #f07070); }
+  .bar-fill.gold { background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+
+  .bar-val {
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+
+  /* ── Portfolio perf table ── */
+  .perf-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin: 28px 0;
+  }
+
+  .perf-panel {
+    background: var(--navy2);
+    padding: 24px;
+  }
+
+  .perf-panel-title {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .perf-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(201,168,76,0.08);
+  }
+  .perf-row:last-child { border-bottom: none; }
+
+  .perf-name { font-size: 13px; font-weight: 500; color: var(--text-strong); }
+  .perf-vals { display: flex; gap: 20px; font-size: 12px; }
+  .perf-val { text-align: right; }
+  .perf-val .n { font-size: 10px; color: var(--text-dim); margin-bottom: 1px; }
+  .perf-val .v { font-weight: 600; }
+  .perf-val .v.pos { color: var(--positive); }
+  .perf-val .v.neg { color: var(--negative); }
+  .perf-val .v.gold { color: var(--gold); }
+
+  /* ── Theme cards ── */
+  .theme-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .theme-card {
+    background: var(--navy2);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    padding: 24px 20px;
+  }
+
+  .theme-card-num {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .theme-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-strong);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .theme-card-body {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.65;
+  }
+
+  /* ── Activity items ── */
+  .activity-item {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .activity-item:last-child { border-bottom: none; }
+
+  .activity-date {
+    flex-shrink: 0;
+    width: 80px;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    padding-top: 2px;
+  }
+
+  .activity-body { flex: 1; }
+  .activity-title {
+    font-weight: 600;
+    color: var(--text-strong);
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  .activity-desc { font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
+
+  /* ── Positioning bullets ── */
+  .pos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .pos-card {
+    background: var(--navy2);
+    border: 1px solid var(--border);
+    padding: 20px;
+  }
+
+  .pos-card-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .pos-card-body {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.65;
+  }
+
+  /* ── Since inception ── */
+  .inception-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .inception-panel {
+    background: var(--navy2);
+    border: 1px solid var(--border);
+    padding: 24px;
+  }
+
+  .inception-panel-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .inception-panel-period {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+
+  .inception-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(201,168,76,0.08);
+    font-size: 13px;
+  }
+  .inception-row:last-child { border-bottom: none; }
+  .inception-name { color: var(--text-strong); font-weight: 500; }
+  .inception-vals { display: flex; gap: 16px; text-align: right; }
+  .inception-val .l { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
+  .inception-val .v { font-weight: 600; }
+  .inception-val .v.gold { color: var(--gold); }
+  .inception-val .v.dim { color: var(--text-dim); }
+  .inception-val .v.pos { color: var(--positive); }
+
+  /* ── Disclaimer ── */
+  .disclaimer {
+    margin: 48px 64px 0;
+    padding: 28px 32px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    border-left: 3px solid rgba(201,168,76,0.4);
+  }
+
+  .disclaimer-title {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .disclaimer-text {
+    font-size: 11.5px;
+    color: var(--text-dim);
+    line-height: 1.65;
+  }
+
+  /* ── Inline bar in table cell ── */
+  .inline-bar-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .inline-bar-wrap {
+    position: relative;
+    width: 90px;
+    height: 18px;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.04);
+    border-radius: 1px;
+  }
+
+  .inline-zero {
+    position: absolute;
+    left: 50%;
+    top: 2px;
+    bottom: 2px;
+    width: 1px;
+    background: rgba(255,255,255,0.18);
+    transform: translateX(-50%);
+  }
+
+  /* negative: bar grows left from centre */
+  .inline-bar.neg {
+    position: absolute;
+    right: 50%;
+    top: 3px;
+    bottom: 3px;
+    background: var(--negative);
+    opacity: 0.85;
+    border-radius: 1px 0 0 1px;
+  }
+
+  /* positive: bar grows right from centre */
+  .inline-bar.pos {
+    position: absolute;
+    left: 50%;
+    top: 3px;
+    bottom: 3px;
+    background: var(--positive);
+    opacity: 0.85;
+    border-radius: 0 1px 1px 0;
+  }
+
+  /* ── Range badge ── */
+  .range-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+  }
+  .range-badge.premium { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.35); }
+  .range-badge.cc { background: rgba(77,184,122,0.1); color: var(--positive); border: 1px solid rgba(77,184,122,0.3); }
+  .range-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+  /* ── Source note ── */
+  .source-note {
+    font-size: 11px;
+    color: var(--text-dim);
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  /* ── Region tag ── */
+  .region-tag {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--text-strong);
+    background: transparent;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .sub-heading {
+    font-size: 28px;
+    color: var(--text-strong);
+    margin: 48px 0 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .sub-heading::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 28px;
+    background: var(--gold);
+    flex-shrink: 0;
+    border-radius: 1px;
+  }
+
+  /* ── Pullquote ── */
+  .pullquote {
+    border-left: 3px solid var(--gold);
+    padding: 12px 20px;
+    margin: 24px 0;
+    background: rgba(201,168,76,0.05);
+  }
+
+  .pullquote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--text-strong);
+    line-height: 1.4;
+  }
+
+  /* ── Footer ── */
+  .doc-footer {
+    padding: 32px 64px;
+    border-top: 1px solid var(--border);
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .doc-footer-logo img { height: 28px; }
+  .doc-footer-logo-wrap { background:#fff; display:inline-flex; align-items:center; padding:8px 14px; }
+  .doc-footer-text { font-size: 10.5px; color: var(--text-dim); letter-spacing: 1px; text-transform: uppercase; }
+
+  /* ══════════════════════════════════════════
+     PRINT / PDF STYLES
+  ══════════════════════════════════════════ */
+  .print-header,
+  .print-footer { display: none; }
+
+  @media print {
+
+    /* Page setup */
+    @page {
+      size: A4 portrait;
+      margin: 22mm 16mm 22mm 16mm;
+    }
+
+    @page :first {
+      margin-top: 0;
+    }
+
+    /* Preserve all colours & backgrounds */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+
+    /* ── Running print header ── */
+    .print-header {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 14mm;
+      background: var(--navy);
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16mm;
+      z-index: 9999;
+    }
+
+    .print-header-logo-wrap {
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+    }
+
+    .print-header-logo-wrap img {
+      height: 22px;
+      display: block;
+    }
+
+    .print-header-right {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    /* ── Running print footer ── */
+    .print-footer {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 12mm;
+      background: var(--navy);
+      border-top: 1px solid var(--border);
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16mm;
+      z-index: 9999;
+    }
+
+    .print-footer-left {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+    }
+
+    .print-footer-right {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      color: var(--text-dim);
+      letter-spacing: 1px;
+    }
+
+    .print-footer-right::after {
+      content: "Page " counter(page) " of " counter(pages);
+    }
+
+    /* ── Body adjustments ── */
+    body {
+      background: var(--navy);
+      font-size: 10pt;
+    }
+
+    /* Push content below the fixed header (except cover) */
+    .doc {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    /* Cover takes its own page, no header offset needed */
+    .cover {
+      page-break-after: always;
+      break-after: page;
+      min-height: 0;
+      height: 267mm; /* A4 content height */
+      padding: 0 48px 56px;
+    }
+
+    /* Sections start fresh where needed */
+    .section {
+      padding: 32px 48px 0;
+    }
+
+    /* Add print-area top padding so content clears the fixed header */
+    .takeaways,
+    .section {
+      padding-top: 8pt;
+    }
+
+    /* First section after cover needs breathing room */
+    .takeaways {
+      margin-top: 0;
+      padding: 32px 48px;
+    }
+
+    /* Section page breaks */
+    .section {
+      page-break-before: auto;
+      break-before: auto;
+    }
+
+    /* Regional sub-headings: keep with following content */
+    .sub-heading {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* Keep these blocks together */
+    .stat-row,
+    .stat-card,
+    .theme-card,
+    .perf-panel,
+    .takeaway-item,
+    .activity-item,
+    .pullquote,
+    .inception-panel {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .theme-grid,
+    .pos-grid,
+    .inception-grid,
+    .perf-grid {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* Keep table header with first row */
+    thead { display: table-header-group; }
+    tfoot { display: table-footer-group; }
+    tr    { page-break-inside: avoid; break-inside: avoid; }
+
+    /* Table wraps */
+    .table-wrap {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin: 20px 0;
+    }
+
+    /* Disclaimer and footer — keep together */
+    .disclaimer {
+      margin: 32px 48px 0;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .doc-footer {
+      margin-top: 32px;
+      padding: 24px 48px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* Screen-only things to hide */
+    .cover-logo-wrap { display: none; }
+    .page-header      { display: none; }
+
+    /* Hover states gone */
+    tbody tr:hover { background: none; }
+  }
+
+  /* ── Mobile responsive ── */
+  @media (max-width: 768px) {
+    body { font-size: 14px; }
+    .doc { padding: 0 0 40px; }
+
+    .cover { padding: 40px 24px 48px; min-height: auto; }
+    .cover-logo-wrap { margin: -40px -24px 32px; padding: 14px 24px; flex-direction: column; gap: 8px; align-items: flex-start; }
+    .cover-logo-wrap-right { font-size: 9px; }
+    .cover-title { font-size: 44px; }
+    .cover-subtitle { font-size: 14px; }
+
+    .takeaways { padding: 32px 24px; }
+    .takeaway-text { font-size: 13.5px; }
+
+    .section { padding: 36px 24px 0; }
+    .section-title { font-size: 28px; }
+
+    .sub-heading { font-size: 22px; margin-top: 32px; }
+    .sub-heading .region-tag { font-size: 22px; }
+
+    .body-text { font-size: 14px; line-height: 1.7; }
+
+    .stat-row { grid-template-columns: repeat(2, 1fr); }
+    .stat-card { padding: 18px 12px; }
+    .stat-card .val { font-size: 26px; }
+    .stat-card .lbl { font-size: 9.5px; }
+
+    .theme-grid, .pos-grid { grid-template-columns: 1fr; gap: 12px; }
+    .theme-card, .pos-card { padding: 18px 16px; }
+
+    .perf-grid, .inception-grid { grid-template-columns: 1fr; }
+    .perf-panel, .inception-panel { padding: 18px 16px; }
+    .perf-vals { gap: 12px; flex-wrap: wrap; }
+
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table { min-width: 540px; }
+    thead th, td { padding: 9px 10px; font-size: 11.5px; }
+
+    .activity-item { flex-direction: column; gap: 8px; padding: 18px 0; }
+    .activity-date { width: auto; }
+
+    .pullquote { padding: 12px 14px; }
+    .pullquote-text { font-size: 16px; }
+
+    .disclaimer { margin: 32px 24px 0; padding: 20px 18px; }
+    .doc-footer { padding: 24px 24px; flex-direction: column; gap: 14px; align-items: flex-start; }
+
+    /* Bars in mobile tables: shrink */
+    .inline-bar-wrap { width: 60px; }
+    .bar-label { width: 130px; font-size: 10.5px; }
+  }
+
+  @media (max-width: 420px) {
+    .cover-title { font-size: 36px; }
+    .section-title { font-size: 24px; }
+    .stat-row { grid-template-columns: 1fr 1fr; }
+    .stat-card .val { font-size: 22px; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Print-only running header (hidden on screen) -->
+<div class="print-header">
+  <div class="print-header-logo-wrap">
+    <img src="assets/logo.png" alt="London Tyne">
+  </div>
+  <div class="print-header-right">Q1 2026 Market Review &nbsp;·&nbsp; For Professional Clients Only</div>
+</div>
+
+<!-- Print-only running footer (hidden on screen) -->
+<div class="print-footer">
+  <div class="print-footer-left">London Tyne &nbsp;·&nbsp; Global Markets Research &nbsp;·&nbsp; Published May 2026</div>
+  <div class="print-footer-right"></div>
+</div>
+
+<div class="doc">
+  <!-- ══ MINI BANNER ══ -->
+  <div style="background:#fff;display:flex;align-items:center;justify-content:space-between;padding:18px 64px;">
+    <img src="assets/logo.png" alt="London Tyne" style="height:42px;display:block;">
+    <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#7a8a9a;font-weight:500;">Q1 2026 Market Review &nbsp;·&nbsp; Part 2 of 4</div>
+  </div>
+  <div style="padding:48px 64px 0;border-bottom:2px solid var(--gold);padding-bottom:32px;">
+    <div style="font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;">Part 2</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:54px;font-weight:600;line-height:1.0;color:var(--text-strong);">Regional & Commodities</div>
+    <div style="margin-top:18px;font-size:14px;color:var(--text-dim);letter-spacing:0.5px;">First Quarter 2026 &nbsp;·&nbsp; Published May 2026</div>
+  </div><!-- ══ REGIONAL REVIEW ══ -->
+  <div class="section">
+    <div class="section-num">Section 02</div>
+    <div class="section-title">Regional Review</div>
+    <div class="section-rule"></div>
+
+    <div class="sub-heading"><span class="region-tag">United States</span></div>
+    <div class="stat-row">
+      <div class="stat-card"><div class="val neg">-4.4%</div><div class="lbl">S&amp;P 500 Return</div></div>
+      <div class="stat-card"><div class="val">2.6%</div><div class="lbl">GDP Growth (Q1 est.)</div></div>
+      <div class="stat-card"><div class="val">3.0%</div><div class="lbl">Headline CPI</div></div>
+      <div class="stat-card"><div class="val">3.50–3.75%</div><div class="lbl">Fed Funds Rate</div></div>
+    </div>
+    <div class="body-text">
+      <p>The US economy entered the year on a slower footing. Real GDP growth in the first quarter is tracking at around 2.6%, following a 0.7% pace in Q4 2025, and the labour market continued to soften — Fed Chair Powell described job creation in March as "essentially zero" with the unemployment rate hovering in the 4.3%–4.4% range.</p>
+      <p>Headline CPI proved sticky at around 3.0% year-on-year and core PCE is forecast to print near 2.7% by quarter-end, both stubbornly above the 2% target. The spike in petrol prices following the Hormuz disruption added to the pressure: by quarter-end, US gasoline prices were back near USD 3.99 a gallon, more than a dollar above where they started February.</p>
+      <p>US equities had their first negative quarter since early 2022. The S&amp;P 500 fell 4.4% and the Nasdaq 100 fell 5.8%, with the Magnificent Seven dropping roughly 13%. The catalyst was a fundamental rethink about the economics of the AI trade. Beneath the index level, however, dispersion was striking — energy stocks rallied around 36%, materials gained 10% and utilities posted a 7% return. Equal-weighted S&amp;P 500 outperformed its cap-weighted counterpart comfortably. Forward valuations compressed from around 22x earnings to closer to 20x by quarter-end.</p>
+    </div>
+
+    <div class="sub-heading"><span class="region-tag">United Kingdom</span></div>
+    <div class="stat-row">
+      <div class="stat-card"><div class="val pos">+2.4%</div><div class="lbl">FTSE All-Share Return</div></div>
+      <div class="stat-card"><div class="val">3.75%</div><div class="lbl">Bank Rate</div></div>
+      <div class="stat-card"><div class="val">3.0%</div><div class="lbl">UK CPI (Jan)</div></div>
+      <div class="stat-card"><div class="val">4.83%</div><div class="lbl">10Y Gilt Yield (Mar 13)</div></div>
+    </div>
+    <div class="body-text">
+      <p>The UK was a relative bright spot in a difficult quarter for global markets. The Bank of England held Bank Rate unchanged at 3.75% at both its February and March meetings, with the MPC voting 5-4 to hold in February. UK headline CPI stood at 3.0% in January and the Bank now expects it to print between 3.0% and 3.5% over the next two quarters before easing back.</p>
+      <p>UK equities benefited handsomely from this backdrop. The FTSE All-Share returned around 2.4% over the quarter, helped enormously by its weighting in energy and resources stocks — BP, Shell, Glencore and Rio Tinto all benefited directly from the rise in oil and industrial metals prices. Mid-caps were more mixed: the more domestically focused FTSE 250 was hampered by the Bank's reluctance to cut rates further.</p>
+      <p>Sterling was broadly stable against the dollar, and the 10-year gilt yield reached 4.83% on 13 March — a level we view as an attractive entry point for sterling sovereign exposure.</p>
+    </div>
+
+    <div class="sub-heading"><span class="region-tag">Europe ex-UK</span></div>
+    <div class="stat-row">
+      <div class="stat-card"><div class="val neg">-4.0%</div><div class="lbl">MSCI Europe ex-UK</div></div>
+      <div class="stat-card"><div class="val">2.5%</div><div class="lbl">HICP Inflation (Mar)</div></div>
+      <div class="stat-card"><div class="val">2.00%</div><div class="lbl">ECB Deposit Rate</div></div>
+      <div class="stat-card"><div class="val neg">-0.8%</div><div class="lbl">EUR/USD</div></div>
+    </div>
+    <div class="body-text">
+      <p>Eurozone growth stayed subdued, tracking modestly below potential as the energy shock landed on top of already-weak German manufacturing and fragile consumer sentiment. Headline HICP inflation jumped to 2.5% in March on higher gas and oil prices. At its 19 March meeting, the ECB held the deposit facility rate at 2.00%, citing the Middle East conflict as the primary source of upside inflation risk. The MSCI Europe ex-UK Index fell around 4% as exporters, automotives and consumer discretionary names came under pressure. Germany found some support from defence and infrastructure capital expenditure under its recently agreed fiscal package.</p>
+    </div>
+
+    <div class="sub-heading"><span class="region-tag">Japan</span></div>
+    <div class="stat-row">
+      <div class="stat-card"><div class="val neg">-3.5%</div><div class="lbl">TOPIX Return</div></div>
+      <div class="stat-card"><div class="val">2.1%</div><div class="lbl">Headline CPI</div></div>
+      <div class="stat-card"><div class="val">0.75%</div><div class="lbl">BoJ Policy Rate</div></div>
+      <div class="stat-card"><div class="val">2.20%</div><div class="lbl">10Y JGB Yield (Mar)</div></div>
+    </div>
+    <div class="body-text">
+      <p>Japan's first quarter was shaped by the interaction of Prime Minister Takaichi's expansionary fiscal plans, persistent above-target inflation, and the energy import shock that hits Japan harder than almost anywhere. Headline CPI ran at around 2.1% year-on-year — the 45th consecutive month above the BoJ's 2% target. The Bank of Japan held its policy rate at 0.75%, the highest since September 1995. The TOPIX fell around 3.5% in local-currency terms. The 10-year JGB yield reached a 27-year high above 2.38% in late January before stabilising near 2.20% by quarter-end.</p>
+    </div>
+
+    <div class="sub-heading"><span class="region-tag">Asia &amp; Emerging Markets</span></div>
+    <div class="stat-row">
+      <div class="stat-card"><div class="val neg">-0.2%</div><div class="lbl">MSCI EM Return</div></div>
+      <div class="stat-card"><div class="val neg">-1.1%</div><div class="lbl">MSCI Asia ex-Japan</div></div>
+      <div class="stat-card"><div class="val neg">-6.0%</div><div class="lbl">Shanghai Composite</div></div>
+      <div class="stat-card"><div class="val">1.50%</div><div class="lbl">PBoC 7-Day Repo Rate</div></div>
+    </div>
+    <div class="body-text">
+      <p>The broader Asia and emerging markets picture was uneven but ultimately resilient relative to developed markets. The MSCI Emerging Markets Index fell only marginally, with early-quarter strength in Korean and Taiwanese semiconductor names cushioning the index against the later risk-off move. Chinese equities remained under pressure — the Shanghai Composite fell around 6% as ongoing property market weakness and persistent deflation weighed on sentiment. India and ASEAN markets were comparatively resilient, supported by stronger domestic growth and lower direct exposure to the energy import shock.</p>
+    </div>
+  </div>
+
+  <!-- ══ COMMODITIES & CURRENCIES ══ -->
+  <div class="section">
+    <div class="section-num">Section 03</div>
+    <div class="section-title">Commodities &amp; Currencies</div>
+    <div class="section-rule"></div>
+
+    <div class="stat-row">
+      <div class="stat-card"><div class="val pos">+26.8%</div><div class="lbl">Bloomberg Commodity Index</div></div>
+      <div class="stat-card"><div class="val pos">c.+80%</div><div class="lbl">Brent Crude Oil</div></div>
+      <div class="stat-card"><div class="val gold">$5,595</div><div class="lbl">Gold Record (29 Jan)</div></div>
+      <div class="stat-card"><div class="val pos">+10.7%</div><div class="lbl">Industrial Metals</div></div>
+    </div>
+
+    <div class="body-text">
+      <p>Commodities were the unambiguous winners of Q1 2026. The Bloomberg Commodity Index returned around 27%, with Brent crude up about 80% from a starting price near USD 57 a barrel. The trigger was the disruption to shipping through the Strait of Hormuz, through which 20%–30% of the world's seaborne crude oil flows. A market that had been comfortably oversupplied at the start of the year suddenly looked tight.</p>
+      <p>Gold had a more interesting quarter. It hit a record high of around USD 5,595 per ounce on 29 January as safe-haven demand and central-bank buying pushed it higher, before falling more than 11% in March in its steepest monthly decline since 2008 as the dollar strengthened. It still ended the quarter around 5% higher in dollar terms. Industrial metals were strong across the board, with copper, aluminium and zinc all posting double-digit gains.</p>
+      <p>Currency moves were comparatively contained. The US dollar gained around 2% over the quarter as traders priced out Fed cuts. Sterling traded in a narrow range and ended broadly flat against the dollar. The yen tested the 160 level against the dollar in late March, prompting verbal intervention from Japanese authorities.</p>
+    </div>
+  </div>
+
+  <!-- ══ KEY THEMES ══ -->
+  <div class="section">
+    <div class="section-num">Section 04</div>
+    <div class="section-title">Key Themes &amp; Risks</div>
+    <div class="section-rule"></div>
+
+    <div class="theme-grid">
+      <div class="theme-card">
+        <div class="theme-card-num">Theme 01</div>
+        <div class="theme-card-title">The AI Capex Reassessment</div>
+        <div class="theme-card-body">For the first time in nearly three years, the AI story shifted from unambiguous tailwind to a source of concentrated risk. Hyperscalers plan to spend over USD 650 billion on AI infrastructure this year, raising questions about return on investment. The Magnificent Seven entered the year at roughly a 25% premium to the rest of the index — that premium compressed materially. We view this as a structural shift reinforcing our preference for broad market participation.</div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-num">Theme 02</div>
+        <div class="theme-card-title">Iran Conflict &amp; Energy Security</div>
+        <div class="theme-card-body">The escalation of the Iran conflict and the resulting disruption to the Strait of Hormuz was the most significant geopolitical shock to global markets since the Russian invasion of Ukraine in 2022. The Strait carries 20%–30% of seaborne crude oil. Our working assumption is that diplomatic pressure will eventually push toward de-escalation, but the strategic vulnerability exposed is unlikely to fade quickly. A structurally higher geopolitical risk premium in oil prices should be expected.</div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-num">Theme 03</div>
+        <div class="theme-card-title">Inflation &amp; the Limits of Easing</div>
+        <div class="theme-card-body">All four major central banks holding rates within a 24-hour window marks a meaningful inflection point in the global easing cycle. Markets entered the year expecting 50–75bp of additional Fed cuts — by end-March that expectation had collapsed to essentially zero. The renewed positive correlation between equities and bonds during inflation shocks strengthens the case for genuine alternatives such as managed futures, infrastructure and gold within multi-asset frameworks.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:48px 64px 0;padding:24px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;"><div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">Continue Reading</div><div style="display:flex;flex-wrap:wrap;gap:8px;"><a href="Q1%202026%20Market%20Review%20-%20Part%201%20-%20Macro%20Overview.html" style="background:transparent;color:var(--text-dim);border:1px solid var(--border);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-radius:2px;">Part 1 · Macro Overview</a><a href="Q1%202026%20Market%20Review%20-%20Part%202%20-%20Regional%20-%20Commodities.html" style="background:var(--gold);color:var(--navy);font-weight:600;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-radius:2px;">Part 2 · Regional & Commodities</a><a href="Q1%202026%20Market%20Review%20-%20Part%203%20-%20Portfolio%20Performance.html" style="background:transparent;color:var(--text-dim);border:1px solid var(--border);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-radius:2px;">Part 3 · Portfolio Performance</a><a href="Q1%202026%20Market%20Review%20-%20Part%204%20-%20Outlook%20-%20Performance.html" style="background:transparent;color:var(--text-dim);border:1px solid var(--border);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-radius:2px;">Part 4 · Outlook & Inception</a></div></div></div>
+
+<!-- Tweaks -->
+<script>
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accentColor": "#c99b4a",
+  "navyBase": "#0d1e35",
+  "positiveColor": "#4db87a",
+  "negativeColor": "#e05a5a"
+}/*EDITMODE-END*/;
+
+function applyTweaks(t) {
+  const r = document.documentElement;
+  r.style.setProperty('--gold', t.accentColor);
+  r.style.setProperty('--gold-light', t.accentColor);
+  r.style.setProperty('--navy', t.navyBase);
+  r.style.setProperty('--navy2', adjustLightness(t.navyBase, 0.03));
+  r.style.setProperty('--navy3', adjustLightness(t.navyBase, 0.06));
+  r.style.setProperty('--positive', t.positiveColor);
+  r.style.setProperty('--negative', t.negativeColor);
+}
+
+function adjustLightness(hex, amt) {
+  const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+  return `rgb(${Math.min(255,r+amt*255)},${Math.min(255,g+amt*255)},${Math.min(255,b+amt*255)})`;
+}
+
+applyTweaks(TWEAK_DEFAULTS);
+
+let tweakPanel = null;
+
+function buildPanel() {
+  const p = document.createElement('div');
+  p.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#112038;border:1px solid rgba(201,168,76,0.3);padding:20px;width:260px;z-index:9999;font-family:DM Sans,sans-serif;font-size:13px;color:#dfe8f0;border-radius:2px;box-shadow:0 8px 32px rgba(0,0,0,0.5);';
+  p.innerHTML = `<div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c9a84c;font-weight:600;margin-bottom:16px;">Tweaks</div>
+  <label style="display:block;margin-bottom:12px;">
+    <div style="font-size:11px;color:#8aa0b8;margin-bottom:4px;">Accent Colour</div>
+    <input type="color" id="tw-accent" value="${TWEAK_DEFAULTS.accentColor}" style="width:100%;height:32px;border:none;cursor:pointer;background:none;">
+  </label>
+  <label style="display:block;margin-bottom:12px;">
+    <div style="font-size:11px;color:#8aa0b8;margin-bottom:4px;">Background Navy</div>
+    <input type="color" id="tw-navy" value="${TWEAK_DEFAULTS.navyBase}" style="width:100%;height:32px;border:none;cursor:pointer;background:none;">
+  </label>
+  <label style="display:block;margin-bottom:4px;">
+    <div style="font-size:11px;color:#8aa0b8;margin-bottom:4px;">Positive / Negative Colour</div>
+    <div style="display:flex;gap:8px;">
+      <input type="color" id="tw-pos" value="${TWEAK_DEFAULTS.positiveColor}" style="flex:1;height:32px;border:none;cursor:pointer;background:none;">
+      <input type="color" id="tw-neg" value="${TWEAK_DEFAULTS.negativeColor}" style="flex:1;height:32px;border:none;cursor:pointer;background:none;">
+    </div>
+  </label>`;
+  document.body.appendChild(p);
+
+  ['tw-accent','tw-navy','tw-pos','tw-neg'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => {
+      const t = {
+        accentColor: document.getElementById('tw-accent').value,
+        navyBase: document.getElementById('tw-navy').value,
+        positiveColor: document.getElementById('tw-pos').value,
+        negativeColor: document.getElementById('tw-neg').value,
+      };
+      applyTweaks(t);
+      window.parent.postMessage({type:'__edit_mode_set_keys', edits: t}, '*');
+    });
+  });
+  return p;
+}
+
+window.addEventListener('message', e => {
+  if (e.data?.type === '__activate_edit_mode') {
+    if (!tweakPanel) tweakPanel = buildPanel();
+    tweakPanel.style.display = 'block';
+  } else if (e.data?.type === '__deactivate_edit_mode') {
+    if (tweakPanel) tweakPanel.style.display = 'none';
+  }
+});
+// Bar table: portfolio row = 100%, benchmark proportional, per group
+function initBarTables() {
+  document.querySelectorAll('table.bar-table').forEach(table => {
+    const rows = [...table.querySelectorAll('tbody tr')];
+    const numCols = rows[0] ? rows[0].querySelectorAll('td').length : 0;
+    const groups = [];
+    for (let i = 0; i < rows.length; i += 3) groups.push(rows.slice(i, i + 3));
+    groups.forEach(group => {
+      const portfolioRow = group[0];
+      const benchmarkRow = group[1];
+      if (!portfolioRow) return;
+      for (let col = 1; col < numCols; col++) {
+        const portCell = portfolioRow.querySelectorAll('td')[col];
+        if (!portCell) continue;
+        const portVal = parseFloat(portCell.textContent.replace(/[+%]/g, ''));
+        if (isNaN(portVal) || portVal <= 0) continue;
+        portCell.style.background = 'linear-gradient(to right, rgba(201,168,76,0.18) 100%, transparent 100%)';
+        if (benchmarkRow) {
+          const iaCell = benchmarkRow.querySelectorAll('td')[col];
+          if (iaCell) {
+            const iaVal = parseFloat(iaCell.textContent.replace(/[+%]/g, ''));
+            if (!isNaN(iaVal) && iaVal > 0) {
+              const pct = Math.min(100, (iaVal / portVal) * 100).toFixed(1);
+              iaCell.style.background = `linear-gradient(to right, rgba(255,255,255,0.08) ${pct}%, transparent ${pct}%)`;
+            }
+          }
+        }
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initBarTables);
+</script>
+
+
+
